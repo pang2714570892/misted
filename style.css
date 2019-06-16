@@ -1,0 +1,148 @@
+body {
+    width: 640px;
+    height: 1030px;
+    margin: 0px;
+    position: relative;
+    background:url(images/bg.jpg);
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.left_top_01
+{
+    width:640px;
+    position: absolute;
+    animation:leftEnterAnim 2s 1;
+    -moz-animation:leftEnterAnim 2s 1;
+    -webkit-animation:leftEnterAnim 2s 1;
+    -o-animation:leftEnterAnim 2s 1;
+}
+
+.bottom_01
+{
+    width: 640px;
+    position: absolute;
+    bottom: 0px;
+    animation:bottomEnterAnim 2s 1;
+}
+
+.top_text_01
+{
+    width: 299px;
+    position: absolute;
+    left: 50%;
+    top: 30px;
+    margin-left: -150px;
+}
+
+.top_text_02
+{
+    width: 453px;
+    position: absolute;
+    top: 100px;
+    left: 30px;
+}
+
+.center_01
+{
+    width: 640px;
+    position: absolute;
+    top: -50px;
+    animation:opacityEnterAnim 2s 1;
+}
+
+
+@keyframes leftEnterAnim
+{
+    0%   {left:-640px}
+    100% {left:0px}
+}
+
+@-moz-keyframes leftEnterAnim /* Firefox */
+{
+    0%   {left:-640px}
+    100% {left:0px}
+}
+
+@-webkit-keyframes leftEnterAnim /* Safari and Chrome */
+{
+    0%   {left:-640px}
+    100% {left:0px}
+}
+
+@-o-keyframes leftEnterAnim /* Opera */
+{
+    0%   {left:-640px}
+    100% {left:0px}
+}
+
+@keyframes bottomEnterAnim
+{
+    0%   {bottom:-640px}
+    100% {bottom:0px}
+}
+
+@keyframes opacityEnterAnim
+{
+    0%   {opacity: 0;}
+    50%  {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+/*
+=====================================
+
+ candle in the wind 
+ 
+=====================================
+*/
+
+@keyframes candleInTheWind {
+    0% {
+      opacity: 0;
+    }
+  
+    12.5% {
+      opacity: .25;
+      transform: skewX(-10deg);
+    }
+  
+    25% {
+      opacity: 0;
+    }
+  
+    37.5% {
+      opacity: 0;
+      transform: skewX(-10deg);
+    }
+  
+    50% {
+      opacity: .75;
+    }
+  
+    62.5% {
+      opacity: 0;
+    }
+  
+    75% {
+      opacity: 1;
+      transform: skewX(-5deg);
+    }
+  
+    87.5% {
+      opacity: .5;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .candleInTheWind {
+    opacity: 0;
+    animation-name: candleInTheWind;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+  }
