@@ -107,6 +107,31 @@ body {
     animation:opacityEnterAnim 2s 1;
 }
 
+.decorate_flash
+{
+    width: 640px;
+    position: absolute;
+    animation:flash 0.8s ease-out infinite;
+}
+
+.door
+{
+    width: 50px;
+    height: 150px;
+    position: absolute;
+    top: 420px;
+    right: 30px;
+}
+
+@keyframes flash {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
 @keyframes leftEnterAnim
 {
     0%   {left:-640px}
