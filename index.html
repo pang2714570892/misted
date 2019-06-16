@@ -8,18 +8,28 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <title>小迷糊</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="js/jquery-1.12.3.min.js"></script>
 </head>
 
 <body>
-    <img src="images/left_top_01.png" class="left_top_01" />
-    <img src="images/bottom_01.png" class="bottom_01" />
-    <div class="div_center">
-        <img src="images/text_01.png" class="top_text_01 candleInTheWind" />
-    </div>
-    <div class="div_center">
-        <img src="images/text_02.png" class="top_text_02 candleInTheWind" />
-    </div>
-    <img src="images/center_01.png" class="center_01" />
+    <section id="loader" class="loader">
+        <div class="loader__bar">
+            <div class="loader__progress-bg"></div>
+            <div id="loader__progress" class="loader__progress"></div>
+            <div id="loader__info" class="loader__info">Loading 0%</div>
+        </div>
+    </section>
+    <section id="page_01" class="page_01">
+        <img src="images/left_top_01.png" class="left_top_01" />
+        <img src="images/bottom_01.png" class="bottom_01" />
+        <img src="images/center_01.png" class="center_01" />
+        <img src="images/text_01.png" class="top_text_01 swivelChair" />
+        <img src="images/text_02.png" class="top_text_02 rock" />
+        <img src="images/decorate_01.png" class="decorate" />
+        <img src="images/decorate_02.png" class="decorate" />
+    </section>
+    <script src="js/imgLoader.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
